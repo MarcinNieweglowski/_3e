@@ -12,7 +12,7 @@ public class CalculationControllerTest {
 	private CalculationService service;
 
 	@BeforeEach
-	public void start() {
+	public void setUp() {
 		this.service = Mockito.mock(CalculationService.class);
 		this.controller = new CalculationController(this.service);
 	}
